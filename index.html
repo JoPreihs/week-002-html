@@ -1,50 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sort your life out!</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- This is the link to the separate stylesheet above -->
+    <style>
+        h1 {
+            color: darkslategray;
+            font-family: 'Dancing Script', cursive;
+        }
+    </style>
 </head>
-    <body>
-        <h1>Welcome to the new way to organise your life.</h1>
-        <h4>Never forget another task again with this simple, effective 'to-do' list application.</h4>
+
+<body>
+    <div id="div1">
+        <h1 id="heading"> Welcome to the new way to organise your life</h1>
+    </div>
+
+    <!-- <span class="my-span">
+        Some text
+    </span>
+    <span class="my-span">
+        Some longer text that takes more space
+    </span>
+    <span class="my-span">
+        Small
+    </span> -->
+    <div id="div2">
+        <h4>Never forget another task again with this simple, effective 'to-do' list application</h4>
+    </div>
+    <div id="div3">
+        <p>Let's get started!</p>
         <p>Just jot down your tasks and the date they need to be completed by below.</p>
+    </div>
+    <!-- Tasks are entered here -->
+    <section id="Tasks and deadlines">
+        <form action="http://sortyourlifeout.com/mylife/tasks" method="POST">
 
-        <!-- Tasks are entered here -->
-        <section id="Tasks and deadlines">
-                <form action="http://sortyourlifeout.com/mylife/tasks" method="POST">
-                
-        <label for="firstTask">Task 1</label>
-        <Input type="text" id="firstTask"/>
+            <label for="firstTask">Task 1</label>
+            <Input type="text" id="firstTask" />
 
-        <label for="deadline">Deadline</label>
-        <input type="date" id="deadline" />
+            <label for="deadline">Deadline</label>
+            <input type="date" id="deadline" />
 
-        <label for="addToList">Add to my list</label>
+            <label for="addToList">Add to my list</label>
             <button type="Submit">Add</button>
 
-        </section>
-        <section id="Tasks remaining">
-            <p>Tasks remaining: 1</p>
-        </section>
-        <section id="Task Status">
-            <table>
-                <tr>
-                    <th>Task 1</th>
-                    <th><button type="Submit">Sorted</button></th>
-                    <th><button type="Delete">Delete it</button></th>
-                </tr>
-                <tr>
-                    <th>Task 2</th>
-                    <th><button type="Submit">Sorted</button></th>
-                    <th><button type="Delete">Delete it</button></th>
-                </tr>
+    </section>
+    <section id="Tasks remaining">
+        <p>Tasks remaining: 1</p>
+    </section>
+    <section id="Task Status">
+        <table>
+            <tr class="task-row">
+                <th>Task 1</th>
+                <th><button type="Submit">Sorted</button></th>
+                <th><button type="Delete">Delete it</button></th>
+            </tr>
+            <tr id="middle-row" class="task-row">
+                <th>Task 2</th>
+                <th><button type="Submit">Sorted</button></th>
+                <th><button type="Delete">Delete it</button></th>
+            </tr>
 
-            </table>
+        </table>
 
 
-        </section>
-    </body>
+    </section>
+</body>
 
 </html>

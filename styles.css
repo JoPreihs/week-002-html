@@ -1,0 +1,47 @@
+/* Style all headings */
+body {
+    background-image: url("Notepad.jpeg");
+}
+h1 {
+    color: darkslategray; 
+    font-family: 'Dancing Script', cursive;
+}
+body {
+    font-family: 'Sree Krushnadevaraya', serif;
+    color: darkslategray;
+}
+#heading {
+color: darkslategray;
+}
+
+.task-row {
+    color: orange;
+}
+#middle-row {
+    color: green;
+    text-decoration: line-through;
+    display: none;
+}
+#div1 {
+    border: 2px solid gray;
+    border-style: dotted;
+    background-color: lightcyan;
+    font-weight: normal;
+    width: 60%;
+    text-align: center;
+    margin: 25px auto auto auto;
+}
+#div2 {
+    margin: 35px auto 0 auto;
+    width: 80%;
+    font-family: 'EB Garamond', serif;
+    font-size: large;
+    text-align: center;
+    color: darkslategray;
+}
+#div3 {
+    margin: 25px 0 0 10px
+}
+.my-span {
+    border: 2px solid yellow;
+}
