@@ -33,27 +33,53 @@
     <div id="div2">
         <h4>Never forget another task again with this simple, effective 'to-do' list application</h4>
     </div>
+
     <div id="div3">
-        <p>Let's get started!</p>
-        <p>Just jot down your tasks and the date they need to be completed by below.</p>
+        <span class="get-started">
+            Let's get started!
+        </span>
     </div>
+
+    <div id="div4">
+        <span class="get-started">
+            Just jot down your tasks and the date they need to be completed by below.
+        </span>
+    </div>
+
     <!-- Tasks are entered here -->
-    <section id="Tasks and deadlines">
-        <form action="http://sortyourlifeout.com/mylife/tasks" method="POST">
+    <div id="div5">
+        <section id="Tasks and deadlines">
+            <form action="http://sortyourlifeout.com/mylife/tasks" method="POST">
 
-            <label for="firstTask">Task 1</label>
-            <Input type="text" id="firstTask" />
+                <label for="firstTask">Task 1</label>
+                <Input type="text" id="firstTask" />
 
-            <label for="deadline">Deadline</label>
-            <input type="date" id="deadline" />
+                <label for="deadline">Deadline</label>
+                <input type="date" id="deadline" />
 
-            <label for="addToList">Add to my list</label>
-            <button type="Submit">Add</button>
+                <label for="addToList">Add to my list</label>
+                <button type="Submit">Add</button>
+                <br>
+                <label for="firstTask">Task 2</label>
+                <Input type="text" id="secondTask" />
 
-    </section>
-    <section id="Tasks remaining">
-        <p>Tasks remaining: 1</p>
-    </section>
+                <label for="deadline">Deadline</label>
+                <input type="date" id="deadline" />
+
+                <label for="addToList">Add to my list</label>
+                <button type="Submit">Add</button>
+            </form>
+
+        </section>
+    </div>
+
+    <div id="div6">
+        <section id="Tasks remaining">
+            <p>Tasks remaining: 1</p>
+        </section>
+    </div>
+
+    <div id="div7">
     <section id="Task Status">
         <table>
             <tr class="task-row">
@@ -61,16 +87,16 @@
                 <th><button type="Submit">Sorted</button></th>
                 <th><button type="Delete">Delete it</button></th>
             </tr>
-            <tr id="middle-row" class="task-row">
+            <tr class="task-row">
                 <th>Task 2</th>
                 <th><button type="Submit">Sorted</button></th>
                 <th><button type="Delete">Delete it</button></th>
             </tr>
 
         </table>
-
-
     </section>
+</div>
+
 </body>
 
 </html>
