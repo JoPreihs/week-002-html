@@ -53,10 +53,20 @@ color: darkslategray;
     margin: 20px 0 20px 10px;
 }
 #div5 {
-margin: 30px auto 0 10px;
+    margin: auto;
+    padding: 0 0 25px 0;
+    width: 60%;
 }
 #div6 {
-    margin: 30px auto 0 10px;
+    margin: auto;
+    padding: 0px 10px 0px 10px;
+    width: 20%;
+    background-color: white;
+    font-family: 'EB Garamond', serif;
+    font-size: medium;
+    border: 2px solid gray;
+    border-style: dotted;
+    text-align: center;
 }
 #div7 {
     margin: 30px auto 0 10px;
