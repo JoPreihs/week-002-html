@@ -68,8 +68,16 @@ color: darkslategray;
     border-style: dotted;
     text-align: center;
 }
-#div7 {
-    margin: 30px auto 0 10px;
+
+    table, tr, th {
+        border: 2px solid gray;
+        border-style: dotted;
+        border-collapse: collapse;}
+        th {
+            height: 30px;
+            background-color: lightcyan;
+            margin: 10px 10px 10px 10px;
+
 }
 .my-span {
     border: 2px solid yellow;
