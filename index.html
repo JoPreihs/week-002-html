@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sort your life out!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <!-- This is the link to the separate stylesheet above -->
     <style>
@@ -47,30 +49,71 @@
     </div>
 
     <!-- Tasks are entered here -->
-    <div id="div5">
-        <section id="Tasks-deadlines">
-            <form action="http://sortyourlifeout.com/mylife/tasks" method="POST">
-
-                <label for="firstTask">Task 1</label>
-                <input type="text" id="firstTask" />
-
-                <label for="deadline">Deadline</label>
-                <input type="date" id="deadline" />
-
-                <label for="addToList">Add to my list</label>
-                <button type="Submit">Add</button>
-                <br>
-                <label for="firstTask">Task 2</label>
-                <input type="text" id="secondTask" />
-
-                <label for="deadline">Deadline</label>
-                <input type="date" id="deadline" />
-
-                <label for="addToList">Add to my list</label>
-                <button type="Submit">Add</button>
-            </form>
+    <div id=“div5”>
+        <div class=“container_1”>
+            <section id="Tasks-deadlines">
+                <form action="http://sortyourlifeout.com/mylife/tasks" method="POST">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="row">
+                                <div class="col-2">
+                                    <label for="firstTask">Task 1</label>
+                                </div>
+                                <div class="col-10">
+                                    <input type="text" id="firstTask" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <label for="secondTask">Task 2</label>
+                                </div>
+                                <div class="col-10">
+                                    <input type="text" id="secondTask" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="row">
+                                <div class="col-4">
+                                    <label for="deadline">Deadline</label>
+                                </div>
+                                <div class="col-8">
+                                    <input type="date" id="deadline" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">
+                                    <label for="deadline">Deadline</label>
+                                </div>
+                                <div class="col-8">
+                                    <input type="date" id="deadline" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="addToList">Add to my list</label>
+                                </div>
+                                <div class="col-6">
+                                    <button type="Submit">Add</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="addToList">Add to my list</label>
+                                </div>
+                                <div class="col-6">
+                                    <button type="Submit">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        </form>
 
         </section>
+
     </div>
 
     <div id="div6">
@@ -80,24 +123,26 @@
     </div>
 
     <div id="div7">
-        <section id="Task-status">
-            <table>
-                <table style="float:right">
-                    <tr class="task-row">
-                        <th>Task 1</th>
-                        <th><button type="Submit">Sorted</button></th>
-                        <th><button type="Delete">Delete it</button></th>
-                    </tr>
-                    <tr class="task-row">
-                        <th>Task 2</th>
-                        <th><button type="Submit">Sorted</button></th>
-                        <th><button type="Delete">Delete it</button></th>
-                    </tr>
+        <div class="container_2">
+            <section id="Task-status">
+                <table>
+                    <table style="float:right">
+                        <tr class="task-row">
+                            <th>Task 1</th>
+                            <th><button type="Submit">Sorted</button></th>
+                            <th><button type="Delete">Delete it</button></th>
+                        </tr>
+                        <tr class="task-row">
+                            <th>Task 2</th>
+                            <th><button type="Submit">Sorted</button></th>
+                            <th><button type="Delete">Delete it</button></th>
+                        </tr>
 
-                </table>
+                    </table>
+        </div>
         </section>
     </div>
-
+    </div>
 </body>
 
 </html>
